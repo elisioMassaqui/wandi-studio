@@ -1,0 +1,20 @@
+{
+  "name": "wandi-studio",
+  "version": "1.0.0",
+  "main": "vite.config.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vite": "^5.3.3"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "sass": "^1.77.6"
+  }
+}
