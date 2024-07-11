@@ -35,25 +35,46 @@ body {
     background-color: rgb(226, 226, 226);
   }
 
-  .editor{
+  .editor {
     width: 100%;
-    height: 84.34%;
+    height: 70.34%;
+    background-color: #000000;
+  }
+
+  .monaco-editor {
+    background-color: #696969;
+    width: 50%;
+    height: 100%;
+  }
+
+  .simulation {
+
+  }
+
+  .log {
+    flex-grow: 1;
+    display: flex;
+    height: 200px; /* Altura inicial do footer */
+    background-color: #008cff;
+    flex-direction: row;
+    padding: 3px;
   }
   
-  footer {
-    background-color: #343a40;
-    color: white;
+  .console {
+    background-color: #333333;
+    color: rgb(255, 255, 255);
     text-align: center;
     position: relative;
-    height: 100px; /* Altura inicial do footer */
+    width: 50%;
     overflow: auto; /* Adiciona barra de rolagem se necessário */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: height 0.3s ease;
+    text-align: start;
   }
-  
-  footer p {
-    margin: 0;
-    padding: 10% 0;
+
+  .serialMonitor {
+    background-color: #696969;
+    color: rgb(0, 0, 0);
+    position: relative;
+    width: 50%;
+    overflow: auto; /* Adiciona barra de rolagem se necessário */
   }
