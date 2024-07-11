@@ -4,39 +4,56 @@ body {
     margin: 0;
     height: 100vh;
   }
-  
-  .sidebar {
-    width: 80px;
-    background-color: rgb(226, 226, 226);
-    height: 100%;
-  }
-  
+
   .content {
     flex-grow: 1;
-    padding: 0;
     display: flex;
     flex-direction: column;
   }
 
   .main {
     flex-grow: 1;
-    padding: 0;
     display: flex;
     flex-direction: row;
   }
-  
-  .navbar {
-    width: 100%;
+
+  .sidebar {
+    width: 90px;
+    height: 100%;
+  }
+
+  .dentro-sidebar {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
   }
   
   .main-content {
     flex-grow: 1;
+    overflow: auto;
+    background-color: rgb(226, 226, 226);
+  }
+
+  .editor{
+    width: 100%;
+    height: 84.34%;
   }
   
   footer {
     background-color: #343a40;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    position: relative;
+    height: 100px; /* Altura inicial do footer */
+    overflow: auto; /* Adiciona barra de rolagem se necessário */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: height 0.3s ease;
   }
   
+  footer p {
+    margin: 0;
+    padding: 10% 0;
+  }
