@@ -11,111 +11,63 @@
 </head>
 
 <body class="mb-2 text-black">
+  <nav class="navbar bg-primary">
+    <div class="container-fluid">
+      <a class="circleLogo" href="#">
+        <div class="circleLogo">
+          <img src="/images/wandi.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+        </div>
+      </a>
+    </div>
+  </nav>
   <div class="content">
     <div class="main">
       <div class="sidebar box">
         <div class="dentro-sidebar">
-          <button type="button" class="btn btn-primary">V</button>
+          <div>
+            <button type="button" class="btn btn-primary">V</button>
+          </div>
           <p></p>
-          <button typse="button" class="btn btn-success">E</button>
+          <div>
+            <button typse="button" class="btn btn-success">E</button>
+          </div>
           <p></p>
-          <button typse="button" class="btn btn-danger">B</button>
+          <div>
+            <button typse="button" class="btn btn-danger">B</button>
+          </div>
+          <p></p>
+          <div>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom">C</button>
+
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+              aria-labelledby="offcanvasBottomLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Console</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body small">
+                <div class="console">
+                  Sáida de tudoooo
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="main-content">
         <!-- Conteúdo principal aqui -->
         <div class="editor">
-          <div class="monaco-editor"></div>
+          <div class="monaco-editor">
+
+          </div>
           <div class="simulation">
             Espaço reservados pra simulação:
-              Three.js
+            Three.js
           </div>
         </div>
-
         <div class="log">
-          <div class="console">
-            Microsoft Windows [Version 10.0.19045.2006]
-            (c) Microsoft Corporation. Todos os direitos reservados.
-            
-            C:\Users\Administrador>arduino-cli compile --fqbn arduino:avr:uno -p COM19 "C:\Users\Administrador\Documents\Causa-Efeito, SINER\Wandi Robot\mundo"
-            Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
-            Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
-            
-            Used platform Version Path
-            arduino:avr   1.8.6   C:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6
-            
-            C:\Users\Administrador>arduino-cli compile --fqbn arduino:avr:uno -p COM19 "C:\Users\Administrador\Documents\Causa-Efeito, SINER\Wandi Robot\mundo" -v
-            
-            FQBN: arduino:avr:uno
-            Using board 'uno' from platform in folder: C:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6
-            Using core 'arduino' from platform in folder: C:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6
-            
-            Detecting libraries used...
-            C:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7/bin/avr-g++ -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -flto -w -x c++ -E -CC -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10607 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -IC:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino -IC:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\variants\standard C:\Users\Administrador\AppData\Local\Temp\arduino\sketches\F4E67BE1B2A761B76A41DBF56FD6A064\sketch\mundo.ino.cpp -o nul
-            Generating function prototypes...
-            C:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7/bin/avr-g++ -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -flto -w -x c++ -E -CC -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10607 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -IC:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino -IC:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\variants\standard C:\Users\Administrador\AppData\Local\Temp\arduino\sketches\F4E67BE1B2A761B76A41DBF56FD6A064\sketch\mundo.ino.cpp -o C:\Users\Administrador\AppData\Local\Temp\894930723\sketch_merged.cpp
-            C:\Users\Administrador\AppData\Local\Arduino15\packages\builtin\tools\ctags\5.8-arduino11/ctags -u --language-force=c++ -f - --c++-kinds=svpf --fields=KSTtzns --line-directives C:\Users\Administrador\AppData\Local\Temp\894930723\sketch_merged.cpp
-            Compiling sketch...
-            "C:\\Users\\Administrador\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10607 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR "-IC:\\Users\\Administrador\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino" "-IC:\\Users\\Administrador\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard" "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064\\sketch\\mundo.ino.cpp" -o "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064\\sketch\\mundo.ino.cpp.o"
-            Compiling libraries...
-            Compiling core...
-            Using precompiled core: C:\Users\Administrador\AppData\Local\Temp\arduino\cores\arduino_avr_uno_cad03e7836a257707c15c5f06cc4a1b4\core.a
-            Linking everything together...
-            "C:\\Users\\Administrador\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p -o "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064/mundo.ino.elf" "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064\\sketch\\mundo.ino.cpp.o" "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064/..\\..\\cores\\arduino_avr_uno_cad03e7836a257707c15c5f06cc4a1b4\\core.a" "-LC:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064" -lm
-            "C:\\Users\\Administrador\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0 "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064/mundo.ino.elf" "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064/mundo.ino.eep"
-            "C:\\Users\\Administrador\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-objcopy" -O ihex -R .eeprom "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064/mundo.ino.elf" "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064/mundo.ino.hex"
-            
-            "C:\\Users\\Administrador\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-size" -A "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064/mundo.ino.elf"
-            Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
-            Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
-            
-            Used platform Version Path
-            arduino:avr   1.8.6   C:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6
-            
-            C:\Users\Administrador>
-
-          </div>
-          <div class="serialMonitor">
-            Microsoft Windows [Version 10.0.19045.2006]
-(c) Microsoft Corporation. Todos os direitos reservados.
-
-C:\Users\Administrador>arduino-cli compile --fqbn arduino:avr:uno -p COM19 "C:\Users\Administrador\Documents\Causa-Efeito, SINER\Wandi Robot\mundo"
-Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
-Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
-
-Used platform Version Path
-arduino:avr   1.8.6   C:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6
-
-C:\Users\Administrador>arduino-cli compile --fqbn arduino:avr:uno -p COM19 "C:\Users\Administrador\Documents\Causa-Efeito, SINER\Wandi Robot\mundo" -v
-
-FQBN: arduino:avr:uno
-Using board 'uno' from platform in folder: C:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6
-Using core 'arduino' from platform in folder: C:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6
-
-Detecting libraries used...
-C:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7/bin/avr-g++ -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -flto -w -x c++ -E -CC -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10607 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -IC:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino -IC:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\variants\standard C:\Users\Administrador\AppData\Local\Temp\arduino\sketches\F4E67BE1B2A761B76A41DBF56FD6A064\sketch\mundo.ino.cpp -o nul
-Generating function prototypes...
-C:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7/bin/avr-g++ -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -flto -w -x c++ -E -CC -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10607 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -IC:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino -IC:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\variants\standard C:\Users\Administrador\AppData\Local\Temp\arduino\sketches\F4E67BE1B2A761B76A41DBF56FD6A064\sketch\mundo.ino.cpp -o C:\Users\Administrador\AppData\Local\Temp\894930723\sketch_merged.cpp
-C:\Users\Administrador\AppData\Local\Arduino15\packages\builtin\tools\ctags\5.8-arduino11/ctags -u --language-force=c++ -f - --c++-kinds=svpf --fields=KSTtzns --line-directives C:\Users\Administrador\AppData\Local\Temp\894930723\sketch_merged.cpp
-Compiling sketch...
-"C:\\Users\\Administrador\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10607 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR "-IC:\\Users\\Administrador\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino" "-IC:\\Users\\Administrador\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard" "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064\\sketch\\mundo.ino.cpp" -o "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064\\sketch\\mundo.ino.cpp.o"
-Compiling libraries...
-Compiling core...
-Using precompiled core: C:\Users\Administrador\AppData\Local\Temp\arduino\cores\arduino_avr_uno_cad03e7836a257707c15c5f06cc4a1b4\core.a
-Linking everything together...
-"C:\\Users\\Administrador\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p -o "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064/mundo.ino.elf" "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064\\sketch\\mundo.ino.cpp.o" "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064/..\\..\\cores\\arduino_avr_uno_cad03e7836a257707c15c5f06cc4a1b4\\core.a" "-LC:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064" -lm
-"C:\\Users\\Administrador\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0 "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064/mundo.ino.elf" "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064/mundo.ino.eep"
-"C:\\Users\\Administrador\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-objcopy" -O ihex -R .eeprom "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064/mundo.ino.elf" "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064/mundo.ino.hex"
-
-"C:\\Users\\Administrador\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-size" -A "C:\\Users\\Administrador\\AppData\\Local\\Temp\\arduino\\sketches\\F4E67BE1B2A761B76A41DBF56FD6A064/mundo.ino.elf"
-Sketch uses 444 bytes (1%) of program storage space. Maximum is 32256 bytes.
-Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables. Maximum is 2048 bytes.
-
-Used platform Version Path
-arduino:avr   1.8.6   C:\Users\Administrador\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6
-
-C:\Users\Administrador>
-          </div>
         </div>
 
       </div>
