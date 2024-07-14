@@ -17,9 +17,8 @@ scene.add(planoCartesiano)
 const geometry = new THREE.BoxGeometry(1, 1, 1);
 const material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
 const cubo = new THREE.Mesh(geometry, material);
-
-cubo.position.y = .5
 scene.add(cubo);
+cubo.position.y = .5
 
 /**
  * Sizes
@@ -33,9 +32,8 @@ const sizes = {
  * Camera
  */
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
-camera.position.z = 10;
-
 scene.add(camera);
+camera.position.z = 10;
 
 /**
  * Renderer
