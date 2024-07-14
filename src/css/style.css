@@ -5,6 +5,10 @@ body {
     height: 100vh;
   }
 
+  .bg-navbar{
+
+  }
+
   .content {
     flex-grow: 1;
     display: flex;
@@ -52,7 +56,7 @@ body {
   }
   
   .console {
-    background-color: #333333;
+
     color: rgb(255, 255, 255);
     text-align: center;
     position: relative;
