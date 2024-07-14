@@ -16,6 +16,7 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "dat.gui": "^0.7.9",
+    "monaco-editor": "^0.50.0",
     "sass": "^1.77.6",
     "three": "^0.166.1"
   }

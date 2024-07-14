@@ -45,11 +45,13 @@ html, body {
     flex-direction: row;
   }
 
-  .monaco-editor{
-    background-color: #696969;
+  #monaco {
+    width: 100%;
+    height: 100%;
+    background-color: #1eff00;
     width: 50%;
     height: 100%;
-  }
+}
 
   .virtual{
     background-color: #02ffea;
@@ -66,5 +68,6 @@ html, body {
     overflow: auto; /* Adiciona barra de rolagem se necessário */
     text-align: start;
   }
+
 
   
